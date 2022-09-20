@@ -40,6 +40,13 @@
         align-items: center;
     }
 
+    .filterInput {
+        border: none;
+        border-bottom: 1px solid #d7d9dc !important;
+
+
+    }
+
     .full-screen {
         color: white
     }
@@ -107,13 +114,47 @@
 
     .button1 {
 
-        width: auto;
+        width: 285px;
+        height: 100px;
 
         padding: 15px 60px;
         text-align: center;
-        border: 1px solid #000 !important;
+        border-radius: 10px;
+        border: 1px solid grey !important;
 
 
+    }
+
+    .example {
+        border: 1px solid grey;
+        border-radius: 10px;
+
+    }
+
+    .button11 {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 10px;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .badge-notify {
+        background: #c40626;
+
+        position: relative;
+        top: -15px;
+        left: -5px;
+    }
+
+    .fulheader {
+        font-size: 18px;
     }
 
     .show {
@@ -209,7 +250,10 @@
                             +91-984899898</i>
                         </li>
                         <li class="nav-item px-3  text-uppercase">
-                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <form class=" exam" action="" style="margin:auto;max-width:300px">
+                                <input class="example p-1" type="text" placeholder="   Search.." name="search2">
+                                <button type="submit"><i class="fa fa-search "></i></button>
+                            </form>
                         </li>
                         <li class="nav-item px-3 text-uppercase">
                             <i class="fa fa-location" aria-hidden="true"></i>
@@ -217,7 +261,8 @@
 
 
                         <li class="nav-item px-3  text-uppercase">
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"><span class="badge badge-notify"
+                                    style="font-size:10px;">2</i></span></i>
                         </li>
                         <li class="nav-item px-3 text-uppercase">
                             <i class="fa fa-user" aria-hidden="true"></i>
@@ -280,28 +325,48 @@
     </div>
 
     <div class="  ">
-        <div class=" col-md-6 text-center text-black d-sm-block d-md-none hei pt-5"> <button
-                class="col-md-6 button1 text-black  " onclick="showPopup()">Filters</button>
-            <div class="dropdown col-md-6 ">
-                <button onclick="myFunction()" class="dropbtn  col-md-6 text-black">Dropdown</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Featured Items</a>
-                    <a href="#">Newest items</a>
-                    <a href="#">Price: Ascending</a>
-                    <a href="#">Price: Descending</a>
-                </div>
-            </div>
+        <div class=" col-md-12 text-center text-black d-sm-block d-md-none hei pt-5"> <button
+                class="col-md-12 button1 text-black  " onclick="showPopup()">FILTERS</button>
+
         </div>
 
         <div class="full-screen hidden p-5">
             <button class="ali" onclick="closePopup()"><i class="fa fa-close p-3 m-2"></i></button>
-            <h2>Product</h2>
-            <h2>COLOURS</h2>
-            <h2>SIZES</h2>
-            <h2>BRANDS</h2>
-            <h2>PRICE</h2>
+            <div class="text-white fulheader">Refine your serach below </div>
+            <select class="form-select filterInput p-2 m-2">
+                <option>Product</option>
+                <option>500</option>
+                <option>5000</option>
+                <option>10,000</option>
+            </select>
+            <select class="form-select filterInput p-2 m-2">
+                <option>Colours</option>
+                <option>500</option>
+                <option>5000</option>
+                <option>10,000</option>
+            </select>
+            <select class="form-select filterInput p-2 m-2">
+                <option>Size</option>
+                <option>500</option>
+                <option>5000</option>
+                <option>10,000</option>
+            </select>
+            <select class="form-select filterInput p-2 m-2">
+                <option>Brand</option>
+                <option>500</option>
+                <option>5000</option>
+                <option>10,000</option>
+            </select>
+            <select class="form-select filterInput p-2 m-2">
+                <option>Price</option>
+                <option>500</option>
+                <option>5000</option>
+                <option>10,000</option>
+            </select>
+            <button class="button11"> <i class="fa fa-search p-2" aria-hidden="true"></i>Show results</button>
 
         </div>
+
     </div>
     <div>
         <div class="row text-center   pt-sm-5 m-sm-2">
