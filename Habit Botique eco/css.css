@@ -168,6 +168,26 @@
     font-size: 20px;
 }
 
+.product_attribute {
+    min-width: 30px;
+    background-color: red;
+    min-height: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+}
+
+.product_attribute1 {
+    min-width: 30px;
+    background-color: red;
+    min-height: 30px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+}
+
 .button5 {
     background-color: #4CAF50;
     /* Green */
@@ -238,7 +258,7 @@
 
 
 .hei {
-    margin-top: 50px !important;
+    margin-top: 140px !important;
 }
 
 .menu-text {
@@ -255,10 +275,11 @@
 }
 
 .menu-icon div {
+
     width: 30px;
     height: 4px;
     background: #e67e22;
-    margin: 4px;
+    margin: 8px;
     transition: all 0.35s;
     border-radius: 2px;
 }
@@ -663,5 +684,6 @@ form .btn button:hover {
 
 .ali {
     float: right;
-    font-size: 30px;
+    font-size: 40px;
+
 }
